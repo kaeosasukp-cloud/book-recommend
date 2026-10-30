@@ -2,24 +2,27 @@
 <html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALMOND</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALMOND</title>
+  <meta name="keywords" content="อัลมอนด์ (Almond),ความเข้าใจอารมณ์,รีวิวนิยายเกาหลี,นิยายดราม่า,หนังสือที่ BTS อ่าน">
+  <meta name="description" content="อัลมอนด์ (Almond) นิยายเกาหลีที่เล่าเรื่องราวของเด็กชายผู้มีความบกพร่องในการรับรู้และระบุอารมณ์ อันเกี่ยวข้องกับสมองส่วนอะมิกดาลา (Amygdala) 
+      พร้อมเรื่องราวที่ชวนให้เข้าใจความรู้สึกของผู้อื่น อีกทั้งยังเป็นหนังสือที่สมาชิกวง BTS เคยอ่านอีกด้วย">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mali&family=Sriracha&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mali&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-     <!-- =========================
+  <!-- =========================
        Header
        ========================= -->
   <header>
@@ -30,7 +33,8 @@
           <span>Almond</span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="เปิดเมนู">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-label="เปิดเมนู">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -38,6 +42,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#">หน้าแรก</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#story">เรื่องย่อ</a></li>
             <li class="nav-item"><a class="nav-link" href="#download">สั่งซื้อ</a></li>
           </ul>
         </div>
@@ -47,53 +52,116 @@
 
 
   <!-- =========================
-       Hero Section
-       ========================= -->
-  <section id="hero" class="bg-mist">
+     Hero Section
+     ========================= -->
+  <section id="hero">
     <div class="container">
-      <div class="row align-items-center g-4">
+      <div class="hero-card">
+        <div class="row align-items-center g-4">
 
-        <!-- คอลัมน์ซ้าย: ปก + Rating -->
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center">
-          <img src="Images/Almond3.jpg" alt="ปกหนังสือ Almond" class="img-fluid book-cover" data-aos="flip-left" data-aos-duration="3000">
-          <div class="rating" data-aos="fade-up" data-aos-duration="3000">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star off">★</span>
+          <!-- คอลัมน์ซ้าย: ปกหนังสือ -->
+          <div class="col-12 col-md-6 text-center">
+            <img src="Images/Almond3.jpg" alt="ปกหนังสือ Almond" class="img-fluid book-cover" data-aos="flip-left"
+              data-aos-duration="3000">
           </div>
-          <p class="rating-score" data-aos="fade-up" data-aos-duration="3000">4.13</p>
-          <p class="rating-source" data-aos="fade-up" data-aos-duration="3000">Goodreads / 200,174 ratings / 33,311 reviews</p>
+
+          <!-- คอลัมน์ขวา: ชื่อเรื่อง + Rating + ข้อมูลหนังสือ -->
+          <div class="col-12 col-md-6">
+            <h1>Almond <span>(อัลมอนด์)</span></h1>
+
+            <div class="rating-row">
+              <div class="rating">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                  class="star">★</span><span class="star off">★</span>
+              </div>
+              <span class="rating-score">4.13</span>
+            </div>
+            <p class="rating-source">Goodreads / 200,174 ratings / 33,311 reviews</p>
+
+            <ul class="book-info">
+              <li><img src="Images/user.png" alt="">Sohn Won-Pyung</li>
+              <li><img src="Images/translation.png" alt="">ภัททิรา</li>
+              <li><img src="Images/publisher.png" alt="">สำนักพิมพ์ฟรูน</li>
+              <li><img src="Images/page.png" alt="">200 หน้า</li>
+              <li><img src="Images/open-book.png" alt="">นวนิยายเกาหลี</li>
+              <li><span class="isbn-label">ISBN</span>978-616-08-741-0</li>
+            </ul>
+
+            <hr>
+          </div>
+
         </div>
 
-        <!-- คอลัมน์ขวา: ข้อมูลหนังสือ -->
-        <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
-          <div class="row align-items-center g-3">
-
-            <div class="col-12 col-xl-7">
-              <h1 data-aos="fade-up" data-aos-duration="3000">Almond <span>(อัลมอนด์)</span></h1>
-              <ul class="book-info" data-aos="fade-up" data-aos-duration="3000">
-                <li><img src="Images/user.png" alt="">Sohn Won-Pyung</li>
-                <li><img src="Images/translation.png" alt="">ภัททิรา</li>
-                <li><img src="Images/publisher.png" alt="">สำนักพิมพ์ฟรูน</li>
-                <li><img src="Images/page.png" alt="">200 หน้า</li>
-                <li><img src="Images/open-book.png" alt="">นวนิยายเกาหลี</li>
-                <li><span class="isbn-label">ISBN</span>978-616-08-741-0</li>
-              </ul>
-            </div>
-
-            <div class="col-12 col-xl-5 text-center" data-aos="fade-up" data-aos-duration="3000">
-              <img src="Images/Almond4.png" alt="อัลมอนด์" class="img-fluid hero-almond">
-            </div>
-
+        <!-- แถวล่าง -->
+        <div class="row">
+          <div class="col-12">
+            <blockquote>
+              ถ้าคุณไม่สามารถรับรู้ความรู้สึกของตัวเองได้
+              แล้วคุณจะเข้าใจความรู้สึกของคนอื่นได้อย่างไร ?
+            </blockquote>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <hr>
+  <!-- =========================
+       Section 1 : ทำไมถึงชื่อ "อัลมอนด์"
+       ========================= -->
+  <section id="about" class="bg-white">
+    <div class="container">
+          <div class="col-12 text-center">
+            <h2>ทำไมถึงชื่อ “อัลมอนด์” ?</h2>
+            <p class="lead-text">
+              ชื่อ <em>Almond</em> เกี่ยวกับ<strong>อะมิกดาลา (Amygdala)</strong>
+            </p>
+            <p class="lead-text">
+              ซึ่งเป็นส่วนหนึ่งของสมองที่มีหน้าที่ในการประมวลผลอารมณ์และความรู้สึก
+            </p>
+            <img src="Images/Almond5.png" alt="สมองส่วนอะมิกดาลา (Amygdala)" class="img-fluid brain-img">
+    </div>
+    </div>
+  </section>
 
-          <blockquote data-aos="fade-up" data-aos-duration="3000">
-            “ถ้าคุณไม่สามารถรับรู้ความรู้สึกของตัวเองได้ 
-          </blockquote>
-          <br>
-          <blockquote data-aos="fade-up" data-aos-duration="3000">
-           แล้วคุณจะเข้าใจความรู้สึกของคนอื่นได้อย่างไร ?”
-          </blockquote>
+
+  <!-- =========================
+       Section 1.2 : หนังสือพูดถึงอะไร
+       ========================= -->
+  <section id="theme" class="bg-white">
+    <div class="container">
+      <h2 class="text-center">“หนังสือเกี่ยวกับเรื่องอะไร?”</h2>
+      <div class="row g-4 mt-2">
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="theme-card">
+            <img src="Images/emotional.png" alt="อารมณ์" class="theme-icon">
+            <h3>อารมณ์</h3>
+            <p>เราจำเป็นต้องรู้สึกเหมือนคนอื่นหรือไม่ จึงจะสามารถเข้าใจพวกเขาได้</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="theme-card">
+            <img src="Images/relationship.png" alt="ความสัมพันธ์" class="theme-icon">
+            <h3>ความสัมพันธ์</h3>
+            <p>บางครั้งการเข้าใจใครสักคน อาจเริ่มต้นจากการยอมรับว่าเราแตกต่างกัน</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="theme-card">
+            <img src="Images/differentiate.png" alt="ความแตกต่าง" class="theme-icon">
+            <h3>ความแตกต่าง</h3>
+            <p>การแตกต่างจากคนส่วนใหญ่ ไม่ได้หมายความว่าเราผิดหรือไม่สมบูรณ์</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="theme-card">
+            <img src="Images/growing-up.png" alt="การเติบโต" class="theme-icon">
+            <h3>การเติบโต</h3>
+            <p>มนุษย์สามารถเรียนรู้สิ่งที่ตัวเองไม่เคยเข้าใจ ผ่านประสบการณ์และผู้คนที่เข้ามาในชีวิต</p>
+          </div>
         </div>
 
       </div>
@@ -101,42 +169,26 @@
   </section>
 
 
-  <!-- =========================
-       Section 1 : ทำไมถึงชื่อ "อัลมอนด์"
-       ========================= -->
-  <section id="about" class="bg-sand text-center">
-    <div class="container">
-      <h2 data-aos="fade-up" data-aos-duration="3000">ทำไมถึงชื่อ “อัลมอนด์” ?</h2>
-      <p class="lead-text" data-aos="fade-up" data-aos-duration="3000">
-        ชื่อ <em>Almond</em> เกี่ยวกับ<strong>อะมิกดาลา (Amygdala)</strong>
-      </p>
-       <p class="lead-text" data-aos="fade-up" data-aos-duration="3000">
-        ซึ่งเป็นส่วนหนึ่งของสมองที่มีหน้าที่ในการประมวลผลอารมณ์และความรู้สึก
-        </p>
-      
-      <img src="Images/Almond5.png" alt="สมองส่วนอะมิกดาลา (Amygdala)" class="img-fluid brain-img" data-aos="fade-up" data-aos-duration="2000">
-    </div>
-  </section>
-
 
   <!-- =========================
        Section 2 : เรื่องย่อ
        ========================= -->
-  <section id="story" class="bg-mist">
+  <section id="story" class="bg-white">
     <div class="container">
       <div class="row align-items-center g-4">
 
         <!-- คอลัมน์ซ้าย: รูปภาพ -->
-        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center">
-          <img src="Images/Almond2.jpg" alt="หนังสือ Almond ปกหลัง" class="img-fluid" data-aos="flip-left" data-aos-duration="3000">
+        <div class="col-12 col-md-5 text-center">
+          <img src="Images/Almond2.jpg" alt="หนังสือ Almond ปกหลัง" class="img-fluid story-img">
         </div>
+
 
         <!-- คอลัมน์ขวา: เนื้อเรื่อง -->
         <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
-          <h2 data-aos="fade-up" data-aos-duration="3000">เรื่องราวของ Almond</h2>
-
+         
+          <h2>เรื่องราวของ Almond</h2>
           <div class="story-box">
-            <p data-aos="fade-up" data-aos-duration="3000">
+            <p>
               <strong>ยุนแจ</strong> เด็กชายผู้ป่วยด้วยโรคอะเล็กซิไธเมีย (Alexithymia)
               ซึ่งทำให้สมองส่วนอะมิกดาลา (Amygdala) ที่ควบคุมอารมณ์และความรู้สึกผิดปกติ
               เขามีความยากลำบากในการรับรู้และแสดงออกทางอารมณ์
@@ -151,66 +203,68 @@
             </p>
           </div>
 
-          <p class="text-center mt-4 story-intro"data-aos="fade-up" data-aos-duration="2000">
+          <p class="text-center mt-4 story-intro">
             เรื่องราวจึงนำ “อัลมอนด์” มาเป็นสัญลักษณ์ของโลกแห่งความรู้สึกและตั้งคำถามว่า
           </p>
-          <p class="text-center quote-text story-intro" data-aos="fade-up" data-aos-duration="2000">
-            <strong><em>“หากเราไม่สามารถรู้สึกเหมือนคนอื่น เราจะยังสามารถเข้าใจและเชื่อมโยงกับผู้อื่นได้หรือไม่?”</em></strong>
+          <p class="text-center quote-text story-intro">
+            <strong><em>“หากเราไม่สามารถรู้สึกเหมือนคนอื่น
+                เราจะยังสามารถเข้าใจผู้อื่นได้หรือไม่?”</em></strong>
           </p>
         </div>
-
       </div>
     </div>
+    </div>
   </section>
-
 
   <!-- =========================
-       Section 3 : หนังสือพูดถึงอะไร
+       Section 1.3 : เหมาะกับใคร
        ========================= -->
-  <section id="theme" class="bg-sand">
+  <section id="faq">
     <div class="container">
 
-      <h2 class="text-center" data-aos="fade-up" data-aos-duration="3000">“หนังสือพูดถึงอะไร?”</h2>
-
-      <div class="row g-4 mt-2">
-
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
-          <img src="Images/emotional.png" alt="อารมณ์" class="theme-icon" data-aos="fade-up" data-aos-duration="2000">
-          <h3 data-aos="fade-up" data-aos-duration="3000">อารมณ์</h3>
-          <p data-aos="fade-up" data-aos-duration="3000">เราจำเป็นต้องรู้สึกเหมือนคนอื่นหรือไม่ จึงจะสามารถเข้าใจพวกเขาได้</p>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+              aria-expanded="true" aria-controls="faq1">
+              เหมาะกับใคร?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">เหมาะกับผู้ที่ชื่นชอบนิยายแนวจิตวิทยา ดราม่า สะท้อนชีวิต
+              รวมถึงผู้ที่สนใจเรื่องอารมณ์ ความรู้สึก ความสัมพันธ์ของมนุษย์
+              และการเรียนรู้ที่จะเข้าใจความแตกต่างของผู้อื่น</div>
+          </div>
         </div>
 
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
-          <img src="Images/relationship.png" alt="ความสัมพันธ์" class="theme-icon" data-aos="fade-up" data-aos-duration="2000">
-          <h3 data-aos="fade-up" data-aos-duration="3000">ความสัมพันธ์</h3>
-          <p data-aos="fade-up" data-aos-duration="3000">บางครั้งการเข้าใจใครสักคน อาจเริ่มต้นจากการยอมรับว่าเราแตกต่างกัน</p>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+              aria-expanded="false" aria-controls="faq2">
+              ต้องมีพื้นฐานหรือไม่?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">ไม่จำเป็นต้องมีพื้นฐานด้านจิตวิทยาหรือความรู้ทางการแพทย์มาก่อน
+              เพราะเนื้อเรื่องถ่ายทอดผ่านชีวิตและความสัมพันธ์ของตัวละครด้วยภาษาที่เข้าใจง่าย
+              ทำให้ผู้อ่านเข้าถึงเรื่องราวได้ไม่ยาก</div>
+          </div>
         </div>
 
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
-          <img src="Images/differentiate.png" alt="ความแตกต่าง" class="theme-icon" data-aos="fade-up" data-aos-duration="2000">
-          <h3 data-aos="fade-up" data-aos-duration="3000">ความแตกต่าง</h3>
-          <p data-aos="fade-up" data-aos-duration="3000">การแตกต่างจากคนส่วนใหญ่ ไม่ได้หมายความว่าเราผิดหรือไม่สมบูรณ์</p>
-        </div>
-
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
-          <img src="Images/growing-up.png" alt="การเติบโต" class="theme-icon" data-aos="fade-up" data-aos-duration="2000">
-          <h3 data-aos="fade-up" data-aos-duration="3000">การเติบโต</h3>
-          <p data-aos="fade-up" data-aos-duration="3000">มนุษย์สามารถเรียนรู้สิ่งที่ตัวเองไม่เคยเข้าใจ ผ่านประสบการณ์และผู้คนที่เข้ามาในชีวิต</p>
-        </div>
-
-      </div>
-
-      <h3 class="text-center closing-text" data-aos="fade-up" data-aos-duration="2000">
-        Almond ไม่ได้เป็นเพียงเรื่องราวของเด็กชายที่ไม่สามารถรับรู้ความรู้สึกเหมือนคนทั่วไป
-      </h3>
-       <h3 class="text-center closing-text" data-aos="fade-up" data-aos-duration="2000">
-        แต่เป็นเรื่องราวที่ชวนให้เรากลับมามอง อารมณ์ ความสัมพันธ์ และความแตกต่างของมนุษย์
-      </h3>
-
-
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+              aria-expanded="false" aria-controls="faq3">
+              ได้ประโยชน์อะไร?
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">ช่วยให้ผู้อ่านเข้าใจความหลากหลายทางอารมณ์และการแสดงออกของมนุษย์มากขึ้น
+              เรียนรู้ที่จะยอมรับความแตกต่าง ฝึกมองโลกผ่านมุมมองของผู้อื่น
+              และตระหนักถึงความสำคัญของความเห็นอกเห็นใจในการสร้างความสัมพันธ์ระหว่างมนุษย์
+            </div>
     </div>
   </section>
-
 
   <!-- =========================
        Footer
@@ -220,35 +274,37 @@
 
       <!-- ข้อความชวนคิด -->
       <div class="row">
-        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 story-intro">
-          <h2 data-aos="fade-up" data-aos-duration="3000">แล้วคุณล่ะ ?</h2>
-          <p class="footer-question" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-sm-12 col-md-10 col-lg-10 story-intro">
+          <h2>แล้วคุณล่ะ ?</h2>
+          <p class="footer-question">
             ถ้าวันหนึ่งคุณไม่สามารถรู้สึกกลัว เศร้า หรือมีความสุขเหมือนคนอื่นได้
             คุณคิดว่าคุณจะใช้ชีวิตอย่างไร?
           </p>
-          <p data-aos="fade-up" data-aos-duration="3000">เข้ามาหาคำตอบได้ใน <strong><em>Almond</em></strong></p>
+          <p>เข้ามาหาคำตอบได้ใน <strong><em>Almond</em></strong></p>
         </div>
       </div>
 
       <!-- ปุ่มสั่งซื้อ -->
       <div class="row g-4 mt-1">
 
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-          <div class="buy-item" data-aos="fade-up" data-aos-duration="3000">
-            <img src="Images/naiin.png" alt="naiin" class="buy-logo" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="buy-item">
+            <img src="Images/naiin.png" alt="naiin" class="buy-logo">
             <div>
-              <p data-aos="fade-up" data-aos-duration="3000">สั่งซื้อหนังสือได้ที่ naiin</p>
-              <a href="https://www.naiin.com/product/detail/556042" target="_blank" rel="noopener noreferrer" class="btn btn-buy">BUY</a>
+              <p>สั่งซื้อหนังสือได้ที่ naiin</p>
+              <a href="https://www.naiin.com/product/detail/556042" target="_blank" rel="noopener noreferrer"
+                class="btn btn-buy">BUY</a>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-          <div class="buy-item" data-aos="fade-up" data-aos-duration="3000">
-            <img src="Images/meb.png" alt="meb" class="buy-logo" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-sm-12 col-md-3">
+          <div class="buy-item">
+            <img src="Images/meb.png" alt="meb" class="buy-logo">
             <div>
-              <p data-aos="fade-up" data-aos-duration="3000">สั่งซื้อ E-Book ได้ที่ meb</p>
-              <a href="https://www.mebmarket.com/ebook-124011-%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%A1%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C--Almond" target="_blank" rel="noopener noreferrer" class="btn btn-buy">BUY</a>
+              <p>สั่งซื้อ E-Book ได้ที่ meb</p>
+              <a href="https://www.mebmarket.com/ebook-124011-%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%A1%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C--Almond"
+                target="_blank" rel="noopener noreferrer" class="btn btn-buy">BUY</a>
             </div>
           </div>
         </div>
@@ -257,32 +313,32 @@
 
       <hr>
 
-      <!-- Credit -->
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <h4 data-aos="fade-up" data-aos-duration="3000">Credit</h4>
-          <ul class="credit-list" data-aos="fade-up" data-aos-duration="3000">
-            <li>รูปภาพปกหน้า/หลังหนังสือ จาก naiin <a href="https://www.naiin.com/" target="_blank" rel="noopener noreferrer">https://www.naiin.com/</a></li>
-            <li>รูปภาพสมองส่วน Amygdala จาก <a href="https://neurosciencenews.com/" target="_blank" rel="noopener noreferrer">https://neurosciencenews.com/</a></li>
-            <li>รูปภาพ icon จาก <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">https://www.flaticon.com/</a></li>
-            <li>ข้อมูล Rating จาก goodreads <a href="https://www.goodreads.com/book/show/52219386-almond#CommunityReviews" target="_blank" rel="noopener noreferrer">https://www.goodreads.com/book/show/52219386-almond</a></li>
-          </ul>
-        </div>
-      </div>
-
+      <h3>Credit</h3>
+      <ul class="credit-list">
+        <li>รูปภาพปกหน้า/ปกหลังหนังสือ จาก
+          <a href="https://www.naiin.com/" target="_blank" rel="noopener">naiin</a>
+        </li>
+        <li>รูปภาพสมองส่วน Amygdala จาก
+          <a href="https://neurosciencenews.com/" target="_blank" rel="noopener">Neuroscience News</a>
+        </li>
+        <li>Icons
+          <a href="https://www.flaticon.com/" target="_blank" rel="noopener">Flaticon</a>
+        </li>
+        <li>ข้อมูล Rating จาก
+          <a href="https://www.goodreads.com/book/show/52219386-almond" target="_blank" rel="noopener">Goodreads</a>
+        </li>
+      </ul>
     </div>
   </footer>
 
 
 
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

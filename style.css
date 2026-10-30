@@ -1,0 +1,431 @@
+
+
+:root {
+  /* สีพื้นหลัง 2 สี */
+  --color-sand: #f7f3ea;   /* ครีม  : Header, Section 1, Section 3 */
+  --color-mist: #dce8ea;   /* ฟ้าเทา : Hero, Section 2, Footer */
+  --color-white: #fff; /*สีขาว*/
+    --color-black: #000000; /*สีดำ*/
+
+  /* สีอื่น ๆ */
+  --color-text: #2b2b2b;
+  --color-star: #f5a623;
+  --color-star-off: #6b6b6b;
+
+  /* ฟอนต์ */
+  --font-heading: "Sriracha", cursive;      /* หัวข้อ */
+  --font-body: "Kanit", sans-serif;         /* เนื้อหา, หัวข้อย่อย */
+
+  /* ขนาดตัวอักษร (ปรับได้ตามต้องการ) */
+  --fs-title: clamp(2.6rem, 6vw, 3.8rem);   /* ชื่อเรื่อง Almond */
+  --fs-title-sub: 1.2rem;                   /* (อัลมอนด์) */
+  --fs-h2: clamp(1.8rem, 4vw, 2.6rem);      /* หัวข้อ Section */
+  --fs-h3: 1.5rem;                          /* หัวข้อขนาดกลาง */
+  --fs-quote: clamp(1.3rem, 2.6vw, 1.8rem); /* ประโยคเด่น */
+  --fs-body: 1rem;                          /* เนื้อหา */
+  --fs-small: 0.9rem;                       /* ตัวเล็ก (ข้อมูลหนังสือ, credit) */
+
+  /* ระยะห่างบน-ล่างของแต่ละ Section */
+  --section-space: 4rem;
+}
+
+
+/* =====================================================
+   ค่าพื้นฐานของ Tag
+   ===================================================== */
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 { font-size: var(--fs-title); }
+h2 { font-size: var(--fs-h2); margin-bottom: 1.25rem; }
+h3 { font-size: var(--fs-h3); font-weight: 700; }
+h4 { font-size: var(--fs-body); }
+
+p { margin-bottom: 0.75rem; }
+
+strong { font-weight: 600; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #000;   /* เส้นบาง */
+  opacity: 0.4;
+  margin: 1.5rem 0;
+}
+
+img { max-width: 100%; }
+
+/* กำหนดระยะห่าง + สีพื้นหลังของทุก Section / Footer */
+section,
+footer {
+  padding: var(--section-space) 0;
+}
+
+/* ชื่อคลาสสีพื้นหลัง (ใช้กับ header / section / footer) */
+.bg-sand { background-color: var(--color-sand); }
+.bg-mist { background-color: var(--color-mist); }
+
+
+/* =====================================================
+   Header
+   ===================================================== */
+header {
+  background-color: var(--color-sand);
+  font-family: var(--font-body);
+}
+
+header .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+}
+
+header .navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+header .nav-link {
+  font-size: var(--fs-body);
+  color: var(--color-text);
+}
+
+header .nav-link:hover {
+  color: #7397a5;
+}
+
+
+/* =====================================================
+   Hero Section
+   ===================================================== */
+#hero {
+  padding: 3rem 0;
+}
+
+#hero .book-cover {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ชื่อเรื่อง: ตัวตรง ใหญ่ขึ้น ชิดซ้าย */
+#hero h1 {
+  font-style: normal;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+#hero h1 span {
+  font-size: var(--fs-title-sub);
+  font-style: normal;
+}
+
+/* แถว Rating: ดาว + คะแนน อยู่บรรทัดเดียวกัน */
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rating {
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: 0.15rem;
+}
+
+.star { color: var(--color-star); }
+.star.off { color: var(--color-star-off); }
+
+.rating-score {
+  margin: 0;
+  font-size: var(--fs-small);
+}
+
+.rating-source {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+/* รายการข้อมูลหนังสือ: ชิดซ้าย */
+.book-info {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+  font-size: var(--fs-small);
+  text-align: left;
+}
+
+.book-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-info img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.isbn-label {
+  width: 20px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+/* เส้นคั่น */
+#hero hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #777;
+  opacity: 1;
+}
+
+/* ประโยคเด่น: บรรทัดเดียว ตัวตรง */
+#hero blockquote {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-quote);
+  line-height: 1.6;
+  text-align: center;
+  margin: 2.5rem 0 0;
+}
+
+#hero {
+  padding: 3rem 0;
+  background: #ffffff;            /* พื้นหลังนอกการ์ด (สีขาว) */
+}
+
+.hero-card {
+  background: #dce8ea;         /* ใช้สีเดียวกับ .bg-mist เดิม หรือ var(--color-mist) */
+  border-radius: 32px;         /* ความโค้งของมุม */
+  padding: 3rem 2.5rem;        /* ระยะห่างด้านในการ์ด */
+  overflow: hidden;            /* ตัดเนื้อหาที่ล้นไม่ให้ทะลุมุมโค้ง */
+}
+
+@media (max-width: 767px) {
+  .hero-card {
+    border-radius: 24px;
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* =====================================================
+   Section 1 : ทำไมถึงชื่อ "อัลมอนด์"
+   ===================================================== */
+#about p {
+  font-size: var(--fs-body);
+}
+
+#about .lead-text {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+#about .brain-img {
+  max-width: 300px;
+}
+
+/* =====================================================
+   Section 1.2 : หนังสือพูดถึงอะไร
+   ===================================================== */
+#theme .theme-icon {
+  width: 100%;
+  max-width: 100px;      /* ปรับขนาดไอคอนตรงนี้ */
+  margin-bottom: 1rem;
+}
+
+#theme h3 {
+  margin-bottom: 0.5rem;
+}
+
+#theme p {
+  font-size: var(--fs-small);
+}
+
+#theme .closing-text {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.theme-card {
+  background: #f7f3ea;
+  border-radius: 32px;
+  padding: 2.5rem 1.5rem;
+  height: 100%;
+  text-align: center;
+
+  /* ความนุ่มนวลของการเปลี่ยน */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* เมื่อมีการ์ดใดการ์ดหนึ่งถูกชี้ ให้การ์ดอื่นจางลง */
+.row:has(.theme-card:hover) .theme-card:not(:hover) {
+  opacity: 0.6;
+  transform: scale(0.98);
+}
+
+/* ต้องเพิ่ม opacity ใน transition ด้วย */
+.theme-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
+}
+
+
+#faq .accordion-item {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+#faq .accordion-button {
+  background: transparent;
+  box-shadow: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+}
+
+#faq .accordion-body {
+  padding: 0 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+#sec4 {
+  padding: 3rem 0;
+  background: #ffffff;            /* พื้นหลังนอกการ์ด (สีขาว) */
+}
+
+.sec4-card {
+  background: #f7f3ea;         /* ใช้สีเดียวกับ .bg-mist เดิม หรือ var(--color-mist) */
+  border-radius: 32px;         /* ความโค้งของมุม */
+  padding: 3rem 2.5rem;        /* ระยะห่างด้านในการ์ด */
+  overflow: hidden;            /* ตัดเนื้อหาที่ล้นไม่ให้ทะลุมุมโค้ง */
+}
+
+@media (max-width: 767px) {
+  .sec4-card {
+    border-radius: 24px;
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* =====================================================
+   Section 2 : เรื่องย่อ
+   ===================================================== */
+.story-box {
+  background-color: var(--color-white);
+  border: 1px solid #000;        /* ขอบสีดำบาง */
+  padding: 1.5rem;
+}
+
+.story-box p {
+  margin: 0;
+  font-size: var(--fs-body);
+}
+
+/* ประโยคตัวหนาในกรอบ ให้เป็นตัวเอียง */
+.story-box strong em {
+  font-style: italic;
+}
+
+/* ประโยคคำถามท้าย Section 2 (ใช้ Sriracha) */
+.quote-text {
+  font-family: var(--font-heading);
+  font-size: var(--fs-body);
+}
+.story-intro {
+  font-size: 1.2rem;
+
+}
+
+.story-img {
+  max-width: 400px;   
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* =====================================================
+   Footer
+   ===================================================== */
+footer .footer-question {
+  font-style: italic;
+}
+
+/* รายการสั่งซื้อ (โลโก้กลม + ข้อความ + ปุ่ม) */
+.buy-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buy-item p {
+  margin-bottom: 0.4rem;
+  font-size: var(--fs-small);
+}
+
+.buy-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;       /* ทำให้เป็นวงกลม */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ปุ่ม BUY */
+.btn-buy {
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  color: #304a54;
+  background-color: var(--color-sand);
+  border: 1px solid var(--color-sand);
+  padding: 0.15rem 1.2rem;
+}
+
+.btn-buy:hover,
+.btn-buy:focus {
+  color: #304a54;
+  background-color: #ece6d6;
+  border-color: #ece6d6;
+}
+
+.credit-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   Mobile (หน้าจอเล็ก)
+   ===================================================== */
+@media (max-width: 767.98px) {
+  :root { --section-space: 2.5rem; }
+
+  #hero .book-cover { max-width: 220px; }
+  .story-box { padding: 1rem; }
+}
